@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kashiyatra</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/60db6881e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <h3>Kashiyatra</h3>
+    </section>
+    <section class="contact">
+      <div class="wrapper">
+        <div class="heading">
+          <h3 data-aos="zoom-in" data-aos-duration="1500">Contact Us</h3>
+        </div>
+        <div class="nav">
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>Register</a
+          >
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>Login</a
+          >
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>Theme</a
+          >
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>Events</a
+          >
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>FAQ</a
+          >
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>Brochure</a
+          >
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>Team</a
+          >
+          <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="2000"
+            ><span></span>Sponsers</a
+          >
+        </div>
+      </div>
+      <div class="img">
+        <div class="youtube" data-aos="zoom-in" data-aos-duration="1500">
+          <a href="https://www.youtube.com/watch?v=mrLQ_TPQ6tI" target="_blank">
+            <img src="./images/ghat2.jpg" alt="youtube" />
+            <div class="content">
+              <p>Aftermovie</p>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </a>
+        </div>
+        <div class="profiles">
+          <div class="profile" data-aos="flip-left" data-aos-duration="1000">
+            <p class="profileHead">Marketing</p>
+            <p class="profileDetail"><i class="far fa-user"></i> John Smith</p>
+            <p class="profileDetail">
+              <i class="fas fa-mobile-alt"></i> +91 123456XXXX
+            </p>
+            <p class="profileDetail">
+              <i class="far fa-envelope"></i> abc@gmail.com
+            </p>
+          </div>
+          <div class="profile" data-aos="flip-right" data-aos-duration="1000">
+            <p class="profileHead">Publicity</p>
+            <p class="profileDetail"><i class="far fa-user"></i> John Smith</p>
+            <p class="profileDetail">
+              <i class="fas fa-mobile-alt"></i> +91 123456XXXX
+            </p>
+            <p class="profileDetail">
+              <i class="far fa-envelope"></i> abc@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#" class="link" data-aos="zoom-in" data-aos-duration="1500"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="#" class="link" data-aos="zoom-in" data-aos-duration="1500"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" class="link" data-aos="zoom-in" data-aos-duration="1500"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </section>
+    <section>
+      <h3>Content</h3>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      AOS.init();
+      $(document).ready(function (e) {
+        $(".btn").on("mouseenter", function (e) {
+          x = e.pageX - $(this).offset().left;
+          y = e.pageY - $(this).offset().top;
+          $(this).find("span").css({ top: y, left: x });
+        });
+        $(".btn").on("mouseout", function (e) {
+          x = e.pageX - $(this).offset().left;
+          y = e.pageY - $(this).offset().top;
+          $(this).find("span").css({ top: y, left: x });
+        });
+      });
+    </script>
+  </body>
+</html>
