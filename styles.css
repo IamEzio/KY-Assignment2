@@ -61,7 +61,6 @@ section {
 }
 
 .nav {
-  min-height: 15vh;
   max-height: 40vh;
   display: flex;
   flex-wrap: wrap;
@@ -112,7 +111,7 @@ section {
 
 .img {
   min-height: 55vh;
-  height: auto;
+  height: 55%;
   width: 100%;
   background: none;
   display: flex;
