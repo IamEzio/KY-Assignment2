@@ -57,7 +57,7 @@ section {
 }
 
 .heading h3:hover {
-  color: #41f321;
+  color: #ff0000;
 }
 
 .nav {
@@ -75,15 +75,16 @@ section {
   border: none;
   border-radius: 15px;
   margin: 10px;
-  background-color: #222;
+  background-color: black;
+  box-shadow: 6px 6px 8px 0 rgba(255, 255, 255, 0.3), -6px -6px 10px 0 black;
   display: inline-block;
   text-decoration: none;
-  color: #41f321;
+  color: #ff0000;
   letter-spacing: 2px;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: all 0.5s;
   overflow: hidden;
   z-index: 2;
 }
@@ -99,7 +100,7 @@ section {
   height: 0px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: #41f321;
+  background: #ff0000;
   transition: width 0.8s, height 0.8s;
   z-index: -1;
 }
@@ -125,7 +126,8 @@ section {
   height: 40%;
   max-width: 300px;
   max-height: 400px;
-  border: 2px solid white;
+  box-shadow: 6px 6px 8px 0 rgba(255, 255, 255, 0.3), -6px -6px 10px 0 black;
+  /* border: 2px solid white; */
   border-radius: 15px;
 }
 
@@ -185,7 +187,8 @@ section {
   max-width: 500px;
   max-height: 400px;
   background-color: rgba(0, 0, 0, 0.9);
-  border: 2px solid white;
+  box-shadow: 6px 6px 8px 0 rgba(255, 255, 255, 0.3), -6px -6px 10px 0 black;
+  /* border: 2px solid white; */
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -223,12 +226,16 @@ section {
 }
 
 .links a {
-  font-size: 50px;
-  color: #41f321;
+  font-size: 40px;
+  color: #ff0000;
   margin: 40px 20px;
 }
 
 .links a i {
+  padding: 10px;
+  background-color: #222;
+  border-radius: 12px;
+  box-shadow: 6px 6px 8px 0 rgba(255, 255, 255, 0.3), -6px -6px 10px 0 black;
   transition: all 0.3s;
 }
 
@@ -238,7 +245,7 @@ section {
 
 @media (max-width: 600px) {
   .btn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .links a {
     font-size: 30px;
